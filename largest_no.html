@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Largest Number among the numbers</title>
+</head>
+<body style="background-color:aqua;">
+<h1 style="text-align:center">LARGEST NUMBER IN THE GROUP</h1>
+First Number : <input type="text" value="" id="no1">
+<br><br>
+Second Number : <input type="text" value="" id="no2">
+<br>
+<button type="button" onclick="largest()">Calculate</button>
+<br>
+<p id="answer">ANSWER</p>
+<script>
+function largest()
+{
+	var first_no = Number(document.getElementById("no1").value);
+	var second_no = Number(document.getElementById("no2").value);
+	
+	// Using ternary operator
+	var largest_no = (first_no>second_no) ? first_no:second_no ;
+	document.getElementById("answer").innerHTML=largest_no;
+}
+</script>
+</body>
+</html>

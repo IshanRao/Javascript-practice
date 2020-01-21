@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Add or subtract two numbers</title>
+<style>
+.input_form
+{
+	border-style : solid;
+	border-width : 2px;
+}
+</style>
+</head>
+
+<body style="background-image:url('/home/pccoe/Music/TECOB235/number.jpg');background-size:content;">
+<h1 style="text-align:center">ADD OR SUBTRACT NUMBERS</h1>
+<br><br>
+<div class="input_form">
+First Number : <input type="text" value="" id="no1">
+<br><br>
+Second Number : <input type="text" value="" id="no2">
+<br><br>
+<button type="button" onclick="add()">ADD</button>
+<br><br>
+<button type="button" onclick="subtract()">SUBTRACT</button>
+<br><br>
+<p id="answer">ANSWER</p>
+</div>
+
+<script>
+	var first_no = Number(document.getElementById("no1").value);
+	var second_no = Number(document.getElementById("no2").value);
+function add()
+{
+	var add_no = first_no+second_no;
+	document.getElementById("answer").innerHTML=add_no;
+}
+function subtract()
+{
+	var sub_no = first_no-second_no;
+	document.getElementById("answer").innerHTML=sub_no;
+}
+</script>
+</body>
+</html>
